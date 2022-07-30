@@ -6,7 +6,22 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
+/* Header */
+h1 {
+  font-size: 40px;
+  margin-bottom: 60px;
+}
+
+/* Grid */
 .container {
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,21 +29,24 @@ body {
 }
 
 .grid {
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   display: grid;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+
+/* All controls - Slider + Buttons */
 .controls {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 80px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
-.clearButton {
+/* Control buttons */
+.clearButton, .eraserButton, .randomButton {
   text-decoration: none;
   font-size: 18px;
   border-radius: 25px;
@@ -38,14 +56,22 @@ body {
   color: white;
   border: none;
   font-weight: bold;
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.clearButton:hover {
+.clearButton:hover, .eraserButton:hover, .randomButton:hover {
   cursor: pointer;
 }
 
+/* Slider */
 .sliderNumber {
   margin-bottom: 10px;
+}
+
+#sizeSlider {
+  width: 200px;
 }
 
 .slider {
